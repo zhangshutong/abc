@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="njnu.det.newvision"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_fILEsYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"       
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/logo"
+        android:name="njnu.det.newvision.ContextUtil"
+      >
+        <activity
+            android:name="njnu.det.newvision.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" 
+             >
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity             
+            android:name="njnu.det.newvision.BodyActivity"
+            android:screenOrientation="portrait"
+            >            
+            
+        </activity>
+        <activity android:name="njnu.det.newvision.NewComposition"></activity>
+        <activity android:name="MainActivity"></activity><activity android:name="RegisterActivity"></activity>
+        
+        <activity android:name="FindPwdActivity"></activity>
+        <activity android:name="ListView">
+            
+        </activity>
+        <activity android:name="ShowComposition"></activity>
+        <activity android:name="SystemSetting"></activity>
+        <activity android:name="AndroidPreferences"></activity>
+        <activity android:name="UserZone"></activity>
+        <activity android:name="DiaryList"
+            android:configChanges="keyboardHidden|orientation"></activity>
+        <activity android:name="NewEssay"></activity>
+        <activity android:name="ShowEssay"></activity>
+    </application>
+
+</manifest>

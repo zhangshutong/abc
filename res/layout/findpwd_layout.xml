@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterActivity" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/txtFindpasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/findPasswd"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/loginName"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtFindAccount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtAccount"
+        android:layout_toRightOf="@id/txtAccount"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="10" />
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAccount"
+        android:layout_below="@+id/edtFindAccount"
+        android:layout_marginTop="24dp"
+        android:text="@string/question"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtFindQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAccount"
+        android:layout_alignRight="@+id/edtFindAccount"
+        android:layout_below="@+id/txtQuestion"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:maxLength="40" />
+
+    <TextView
+        android:id="@+id/txtAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtQuestion"
+        android:layout_below="@+id/edtFindQuestion"
+        android:text="@string/answer"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtFindAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edtFindQuestion"
+        android:layout_alignRight="@+id/edtFindQuestion"
+        android:layout_below="@+id/txtAnswer"
+        android:ems="10"
+        android:inputType="text"
+        android:maxLength="20" />
+
+    <Button
+        android:id="@+id/btFindPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtFindpasswd"
+        android:layout_alignRight="@+id/txtFindpasswd"
+        android:layout_below="@+id/edtConfirm"
+        android:layout_marginTop="28dp"
+        android:text="@string/verify" />
+
+    <TextView
+        android:id="@+id/txtPasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAnswer"
+        android:layout_below="@+id/edtFindAnswer"
+        android:text="@string/password"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtPasswd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtFindAccount"
+        android:layout_below="@+id/txtPasswd"
+        android:inputType= "textPassword"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/txtConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPasswd"
+        android:layout_below="@+id/edtPasswd"
+        android:text="@string/confirm"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtFindAccount"
+        android:layout_below="@+id/txtConfirm"
+        android:inputType= "textPassword"
+        android:ems="10" >
+
+    </EditText>
+
+</RelativeLayout>
