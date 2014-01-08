@@ -52,5 +52,13 @@
 	<string name="answerError">密码问题为空</string>
 	<string name="hasUser">该账号已存在</string>
 	<string name="regSucess">账号注册成功</string>
+	<!-- 新增资源  2014.1.8-->
+    <string name="save">保存</string>
+    
+    <string name="cancel">取消</string>
+    <string name="newDiaryGroup">请输入名称</string>
+     <string name="creatDiaryGroup">新建分组</string>
+    <string name="diaryList">观察日志分组列表</string>
+	 <string name="belong">所属观察日志</string>
 	
 </resources>

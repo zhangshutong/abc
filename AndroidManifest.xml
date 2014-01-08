@@ -53,7 +53,10 @@
         <activity android:name="DiaryList"
             android:configChanges="keyboardHidden|orientation"></activity>
         <activity android:name="NewEssay"></activity>
+        <activity android:name="NewDiary"></activity>
         <activity android:name="ShowEssay"></activity>
+        <activity android:name="ShowDiary"></activity>
+       
     </application>
 
 </manifest>

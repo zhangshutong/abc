@@ -24,7 +24,7 @@ public class NewComposition extends Activity{
 	private EditText contentEditText;
 	protected void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);	
-	    setContentView(R.layout.writingdiary_layout); 
+	    setContentView(R.layout.writing_essay_layout); 
 	    titleEditText = (EditText)findViewById(R.id.editText1);
 	    keywordsEditText = (EditText)findViewById(R.id.EditText01);
 	    contentEditText = (EditText)findViewById(R.id.editText2);    

@@ -390,7 +390,7 @@ public class BodyActivity extends Activity implements OnClickListener, OnMenuIte
 			 
 		        switch (item.getItemId()) {  
 		        case 1:  
-		            startActivity(new Intent(this, NewComposition.class));  
+		            startActivity(new Intent(this, NewDiary.class));  
 		            break;   
 		        case 2:
 		        	 startActivity(new Intent(this, NewEssay.class));  
