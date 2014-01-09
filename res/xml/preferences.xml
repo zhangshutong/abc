@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>  
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">  
   
-    <PreferenceCategory android:title="我的"  
-        android:key="set_local" />  
+    <PreferenceCategory android:title="我的"  android:key="set_local" />  
     <CheckBoxPreference android:key="apply_wireless"  
         android:title="使用无线网络" android:summary="连接无线网络进行应用程序的使用"  
-        android:defaultValue="true">  
+        android:defaultValue="true">            
     </CheckBoxPreference>  
+    
+    <!-- new add  2014.1.9  by zst-->
+    <CheckBoxPreference android:key="open_service"  
+        android:title="开启服务" android:summary="开启服务，寻找网络学伴">  
+    </CheckBoxPreference>  
+       <!-- new add  2014.1.9-->
     <CheckBoxPreference android:key="apply_gps"  
         android:title="清空缓存" android:summary="清空个人信息">  
     </CheckBoxPreference>  

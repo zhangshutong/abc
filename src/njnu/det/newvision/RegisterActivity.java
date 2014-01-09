@@ -1,7 +1,9 @@
 package njnu.det.newvision;
 
 import java.io.StringWriter;
+
 import org.xmlpull.v1.XmlSerializer;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -25,7 +27,7 @@ public class RegisterActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_register);
-		
+		MyApplication.getInstance().addActivity(this);// ÍË³ö
 		btRegister=(ImageButton)findViewById(R.id.btRegister);
 		account = (EditText)findViewById(R.id.edtAccount);
 	    password= (EditText)findViewById(R.id.edtPasswd);

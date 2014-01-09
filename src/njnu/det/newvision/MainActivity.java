@@ -1,6 +1,9 @@
 package njnu.det.newvision;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -66,5 +69,33 @@ public class MainActivity extends Activity implements OnClickListener{
 		startActivity(intent);
 		
 	}
+	
+	@Override
+	public void onBackPressed() {
+	 quit();
+	}
+	public void  quit(){
+		 AlertDialog.Builder builder = new Builder(MainActivity.this);
+			builder.setMessage(R.string.quitconfirm)
+			
+			.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					// TODO Auto-generated method stub
+					MyApplication.getInstance().exit();
+				}
+			})
+			
+			.setNegativeButton(R.string.giveup, new DialogInterface.OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					// TODO Auto-generated method stub
+					
+				}
+			})
+			.show();
+	 }
 
 }

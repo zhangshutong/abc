@@ -18,7 +18,6 @@ public class EssayResource extends ServerResource{
 
 	String id,title,keywords,author,date,content,editdate,accessory_id,synctime;
 	@Get
-	
 	public String toXML() {   //update/ insert 都是插入数据库，只是condituion 和 operation 不同
 		StringWriter sw = new StringWriter();
 		try {						
