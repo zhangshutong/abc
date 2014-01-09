@@ -160,6 +160,7 @@ public class LoginActivity extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
+		MyApplication.getInstance().addActivity(this);
 		account = (EditText)findViewById(R.id.edtAccount);
 		account.setSingleLine(true);
 		account.setMaxWidth(120);
